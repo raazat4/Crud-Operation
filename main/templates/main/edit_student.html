@@ -1,0 +1,26 @@
+{% extends 'main/base.html' %}
+{% block title %}Edit Student{% endblock title %} 
+
+{% block main_content %}
+
+<section class="container">
+    <div class="row justify-content-around text-center mt-3">
+        <div class="col-sm-8">
+            <h3>CRUD Project In Python Django</h3>
+        </div>
+    </div>  
+    <div class="row justify-content-around ">
+        <div class="col-sm-4">
+           <form action="" method="POST" class="bg-aqua p-3 rounded shadow">
+               {% csrf_token %}
+               {{form.as_p}}
+               <input type="submit" value="Update" class="btn btn-danger">
+           </form>
+        </div>
+    </div>
+
+    
+
+</section>
+
+{% endblock main_content%}
